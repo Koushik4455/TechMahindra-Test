@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  .nav-title{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px !important;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  .nav-links{
+    margin-right: 50px;
+    margin-top: 5px;
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 400px) {
+    .nav-links {
+      margin-right: 20px;
+      margin-top: 10px !important;
+      font-size: 15px !important;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .nav-title {
+      font-size: 15px !important;
+    }
+  }
+  /* input  */
+  .search{
+    padding: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+.end{
+    margin-left: 800px;
+    padding: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media only screen and (max-width: 1168px) {
+    .end {
+     margin-left: 600px !important;
+    }
+  }
+  @media only screen and (max-width: 960px) {
+    .end {
+     margin-left: 450px !important;
+    }
+  }
+  @media only screen and (max-width: 812px) {
+    .end {
+     margin-left: 350px !important;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .end {
+     margin-left: 0px !important;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .end {
+     margin-top: 10px !important;
+    }
+  }
+  .input{
+    margin: 50px;
+  }
+  @media only screen and (max-width: 600px) {
+    .input {
+     margin: 10px !important;
+     
+    }
+  }
+  /* Dark mOde */
+  .light-mode-button {
+    background: 0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+   
+    width: 100px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin-top: 8px;
+}
+
+.light-mode-button:focus {
+    outline: none; /* Not ideal for accessibility */
+}
+
+/* 
+/* Light & Dark Mode Styles
+		--------------------------- */
+
+body {
+    background-color: #f6f6f6;
+    transition: background-color 0.3s;
+}
+
+body[light-mode="dark"] {
+    background-color: #141516;
+    color: #ced4e2;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+    background-color: #ced4e2;
+    color: #141516;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+    left: 65px;
+    background-color: #141516;
+}
+
+body[light-mode="dark"] a {
+    color: #141516;
+}
+ 
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.img{
+    width: 200px;
+    height: 125px;
+}
+.card{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+h3,h4,h5{
+    margin: 10px;
+}
